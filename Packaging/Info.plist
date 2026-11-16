@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleDevelopmentRegion</key><string>en</string>
+  <key>CFBundleLocalizations</key><array><string>en</string></array>
+  <key>CFBundleIdentifier</key><string>it.typewriter.desktop</string>
+  <key>CFBundleName</key><string>Typewriter</string>
+  <key>CFBundleDisplayName</key><string>Typewriter</string>
+  <key>CFBundleExecutable</key><string>Typewriter</string>
+  <key>CFBundleIconFile</key><string>Typewriter.icns</string>
+  <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.2</string>
+  <key>CFBundleVersion</key><string>3</string>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>LSRequiresNativeExecution</key><true/>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSPrincipalClass</key><string>NSApplication</string>
+  <key>CFBundleDocumentTypes</key><array>
+    <dict><key>CFBundleTypeName</key><string>LaTeX</string><key>CFBundleTypeRole</key><string>Editor</string>
+      <key>LSHandlerRank</key><string>Alternate</string><key>LSItemContentTypes</key><array><string>org.tug.tex</string></array>
+      <key>NSDocumentClass</key><string>TypewriterDocument</string></dict>
+    <dict><key>CFBundleTypeName</key><string>Word Document</string><key>CFBundleTypeRole</key><string>Editor</string>
+      <key>LSHandlerRank</key><string>Alternate</string><key>LSItemContentTypes</key><array><string>org.openxmlformats.wordprocessingml.document</string></array>
+      <key>NSDocumentClass</key><string>TypewriterDocument</string></dict>
+    <dict><key>CFBundleTypeName</key><string>Plain Text</string><key>CFBundleTypeRole</key><string>Editor</string>
+      <key>LSHandlerRank</key><string>Alternate</string><key>LSItemContentTypes</key><array><string>public.plain-text</string></array>
+      <key>NSDocumentClass</key><string>TypewriterDocument</string></dict>
+  </array>
+  <key>UTImportedTypeDeclarations</key><array><dict>
+    <key>UTTypeIdentifier</key><string>org.tug.tex</string>
+    <key>UTTypeDescription</key><string>LaTeX Source</string>
+    <key>UTTypeConformsTo</key><array><string>public.plain-text</string></array>
+    <key>UTTypeTagSpecification</key><dict><key>public.filename-extension</key><array><string>tex</string></array></dict>
+  </dict></array>
+</dict></plist>
